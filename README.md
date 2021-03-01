@@ -8,4 +8,6 @@ curl
 jq
 git
 
+use: sh GitCloner.sh
+the script will request the name of the user to clone
 developed in parrotOS 4.10
