@@ -31,5 +31,5 @@ while [ $EXIT -lt 1 ]; do
         EXIT=1
     fi
 done
-echo "Thanks for using, Hope it has been useful"
+echo "All Done"
 
