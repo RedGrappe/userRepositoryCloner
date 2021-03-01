@@ -16,8 +16,7 @@ sleep 1
 echo "STARTIG CLONING PROCESS"
 sed  's/"//gp' urls.txt > clone.urls
 for repos in $(cat clone.urls); do
-    echo "Cloning: $i"
-    git clone --recursive $i
+    git clone --recursive $repos
 done
 rm clone.urls
 
