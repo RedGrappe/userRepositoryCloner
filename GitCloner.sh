@@ -12,11 +12,14 @@ cd $user
 echo "*/*/*/*/*/*/*/ GETTING LINKS FOR ALL REPOs FROM THE USER "$user" /*/*/*/*/*/*/*"
 curl "https://api.github.com/users/$user/repos?per\_page=100"  | jq '.[].clone_url'  > urls.txt
 echo "DONE"
+sleep 1
 echo "STARTIG CLONING PROCESS"
-for i in $(cat urls.txt); do
+sed  's/"//gp' urls.txt > clone.urls
+for repos in $(cat clone.urls); do
     echo "Cloning: $i"
     git clone --recursive $i
 done
+rm clone.urls
 
 EXIT=0
 while [ $EXIT -lt 1 ]; do
