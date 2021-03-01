@@ -1,5 +1,5 @@
 # userRepositoryCloner
-tool to clone all a user's repositories on GitHub 
+tool to clone all repositories from a user on GitHub 
 
 It is the first repository that I upload, I hope it will be useful for you, suggestions are welcome.
 
