@@ -1,5 +1,5 @@
 #!/bin/bash
-#developed in ParrotOS 4.10 by leyvatheam
+#developed in ParrotOS 4.10 by RedGrappe
 clear
 echo "Dependencies:\ncurl, jq and git \nif you don't have the required dependencies run: \nsudo apt update && sudo apt install curl jq git "
 sleep 5
